@@ -1,0 +1,104 @@
+/** ---------
+    GENERAL
+    --------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** ---------
+    HEADER
+    --------*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 170px;
+}
+
+.logo{
+    max-width: 100px;
+    height: auto;
+}
+
+
+.menu{
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    position: relative;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-family:'Angel Wish', sans-serif;
+    transition: font-size 0.3s ease;
+    font-size: 40px;
+    background-color: red;
+
+}
+
+.menu img{
+    transition: width 0.3s ease;
+    width: 40px;
+    height: auto;
+}
+
+
+.menu .dropdown{
+    display: none; /*Ocultado por defecto*/
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    top: 100%;
+    left: 350px;
+}
+
+.menu .dropdown li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.menu a.cita.active + .dropdown {
+    display: block;
+}
+
+
+/** --------------------------------------------------------------------------------
+                                    Efectos
+    --------------------------------------------------------------------------------*/
+
+.menu .dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+.menu a:hover{
+    font-size: 48px;
+}
+
+.menu img:hover{
+    width: 48px;
+    height: auto;
+}
+
+.menu .dropdown li:hover {
+    background-color: #f0f0f0;
+}
+
+/** ---------
+    BODY
+    --------*/
+
+body{
+    font-family:"roboto";
+    display: flex;
+    flex-direction: column;
+
+}
