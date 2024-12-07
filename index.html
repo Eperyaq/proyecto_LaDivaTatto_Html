@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="estilos/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><!-- Swiper CSS -->
+    <title>La Diva Tattoo</title>
 
 </head>
 <body>
     
     <header class="navbar">
-        <img src="img/logo_Diva.png" alt="logo_DivaTattoo" class="logo">
+        
+        <a href="#"><img src="img/logo_Diva.png" alt="logo_DivaTattoo" class="logo"></a>
 
         <nav class="menu">
-            <a href="#"><img src="iconos/soleado.svg" alt="icono sol"></a>
+            <a href="#"><img src="iconos/soleado.svg" alt="icono sol" class="icono_sol"></a>
             <a href="#">Inicio</a>
             <a href="#">Sobre nosotros</a>
 
@@ -28,22 +29,73 @@
             <a href="#">Registrarse</a>
 
 
-            <a href="#"><img src="img/banderaEsp.png" alt="bandera de españa"></a>
-            <ul class="dropdown">
-                <li><a href="#">Cita tatuajes</a></li> <!-- Cambiar idioma de la pagina-->
-                <li><a href="#">Cita piercings</a></li>
+            <a href="#" class="pais">
+                <img src="img/banderaEsp.png" alt="bandera de españa" class="bandera">
+            </a>
+            <ul class="dropdown-paises">
+                <li><a href="#"><img src="img/reino-unido.png" alt="bandera del reino-unido"></a></li> <!-- Cambiar idioma de la pagina-->
+                <li><a href="#"><img src="img/aleman.png" alt="bandera de alemania"></a></li>
             </ul>
 
         </nav>
     </header>
 
     <main>
-        
+        <section class="informacion">
+            
+            <img src="img/escaparate_estudio.jpeg" alt="foto del escaparate" class="escaparate">
+            
+
+            <article class="info_general">
+                <h1 class="h1"><b>LA DIVA TATTOO, EL NUEVO ESTUDIO DE TATUAJES EN LANZAROTE QUE MARCARÁ TENDENCIA.</b></h1>
+                <br>
+
+                <p class="parrafo">
+                     La Diva Tattoo, en Lanzarote, es un estudio donde transformamos ideas en arte personalizado. 
+                     Nuestro equipo de tatuadores combina experiencia, técnicas modernas y creatividad para ofrecer tatuajes únicos
+                     en estilos variados, adaptados a cada cliente.
+                 </p>
+                 <br>
+                 <p class="parrafo">
+                     También ofrecemos servicios como piercings, micropigmentación y gemas dentales, siempre con los más altos
+                     estándares de calidad y seguridad. En un espacio que une profesionalismo, arte y comodidad, 
+                     hacemos de cada diseño una historia inolvidable.
+                 </p>
+            </article>
+           
+        </section>
+
+        <section class="sec_servicios">
+            <h1 class="h1_servicios">Servicios</h1>
+        </section>
+
+        <section class="dos_col">
+            
+            <article class="columna izquierda">
+
+                <h1>Tatuajes</h1>
+                <div class="slider-container">
+                    <div class="slider"></div>
+                </div>
+
+            </article>
+
+            <!-- Columna Derecha -->
+            <article class="columna derecha">
+                
+            </article>
+
+        </section>
+
+            
     </main>
 
     <footer>
 
     </footer>
+    
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script><!-- Scrip de carga de Swiper JS -->
+<script src="js/swiper.js"></script>
 <script src="js/cita.js"></script>
 </body>
 </html>
