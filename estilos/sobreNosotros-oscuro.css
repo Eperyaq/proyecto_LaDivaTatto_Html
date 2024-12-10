@@ -228,14 +228,38 @@
         padding: 20px; /* Añade espacio interno */
         margin: 0 0 0 150px;
     }
+
+    /*REPITO ESTE Y EL DE ABAJO PORQUE NO QUIERO QUE LORENA TENGA HOVER*/
+    .izquierda{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     
-    .izq img{
+        gap: 10%; /* Añade espacio uniforme entre los elementos */
+        padding: 20px; /* Añade espacio interno */
+        margin: 0 0 0 150px;
+    }
+
+    .lorena{
         margin: 0;
-        width: 100%;
+        max-width: 100%;
+        min-width: 150px;
         height: auto;
         max-height: 600px;
         box-shadow:2px 2px 5px rgba(221, 221, 221, 0.5);
         transition: transform 0.3s ease; /* Transición suave para el hover */
+    }
+    
+    .izq img{
+        margin: 0;
+        max-width: 100%;
+        min-width: 150px;
+        height: auto;
+        max-height: 600px;
+        box-shadow:2px 2px 5px rgba(221, 221, 221, 0.5);
+        transition: transform 0.3s ease; /* Transición suave para el hover */
+
+       
         
     }
     
@@ -275,7 +299,8 @@
     
     .der img{
         margin: 0;
-        width: 100%;
+        max-width: 100%;
+        min-width: 150px;
         height: auto;
         max-height: 600px;
         box-shadow:-2px 2px 5px rgba(221, 221, 221, 0.5);
