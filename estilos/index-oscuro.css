@@ -1,0 +1,478 @@
+/** ---------
+    GENERAL
+    --------*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #e0e0e0;
+    }
+    
+    .h1{
+        font-size: 30px;
+    }
+    
+    .parrafo{
+        font-size: 20px;
+        font-family: "roboto",sans-serif;
+    }
+    
+    .h1_angel{
+        font-family: "Angel Wish", sans-serif;
+        font-size: 40px;
+        font-weight: normal;
+        margin: 20px;
+    }
+    
+    /** --------------------------------------------------------------------------------
+                                        HEADER
+        --------------------------------------------------------------------------------*/
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .logo{
+        margin: 0% 50%;
+        max-width: 150px;
+        width: 80px;
+        height: auto;
+        transition: width 0.3s ease;
+        
+    }
+    
+    
+    
+    /** ---------
+        MENÚ
+        --------*/
+    
+    
+    .menu{
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        font-family:'Angel Wish', sans-serif;
+        transition: font-size 0.3s ease;
+        font-size: 40px;
+    
+    }
+    
+    .menu img{
+        transition: width 0.3s ease;
+        width: 40px;
+        height: auto;
+    }
+    
+    .menu .dropdown{
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        background-color: #c0b68b;
+        border: 1px solid #d9ce9f;
+        z-index: 1000;
+        top: 100%;
+        left: 50%;
+    }
+    
+    .menu .dropdown li{
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .menu a.cita.active + .dropdown {
+        display: block;
+    }
+    
+    
+    .menu .dropdown-paises{
+        display: none; /*Ocultado por defecto*/
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        background-color: #c0b68b;
+        border: 1px solid #d9ce9f;
+        z-index: 1000;
+        top: 100%;
+        right: 0px;
+    }
+    
+    .menu .dropdown-paises li{
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .menu a.pais.active + .dropdown-paises {
+        display: block;
+    }
+    
+    /*Este solo esta en el iniciado*/
+    .perfil{ 
+        border-radius: 100%;
+    }
+    
+    /** --------------------------------------------------------------------------------
+                                        Efectos
+        --------------------------------------------------------------------------------*/
+    
+    .logo:hover{
+        width: 90px;
+        height: auto;
+    }
+    
+    .menu a:hover{
+        font-size: 48px;
+        text-shadow: 4px 4px 5px rgba(173, 173, 173, 0.5);
+        transition: text-shadow 0.3s ease;
+    }
+
+    
+    .icono_sol {
+        width: 50px; 
+        height: 50px;
+        filter: invert(1);
+        transition: filter 0.3s ease; 
+    }
+    
+   .icono_sol:hover {
+        filter: invert(1) drop-shadow(4px 4px 5px rgba(217, 206, 159, 0.5)); /* Combina ambos efectos */
+    }
+    
+    .bandera:hover{
+        filter: drop-shadow(4px 4px 4px rgba(217, 206, 159, 0.5)); 
+    }
+
+    .fuera:hover{
+        filter: drop-shadow(4px 4px 4px rgba(77, 65, 14, 0.5));
+    }
+    
+    .menu img:hover{
+        width: 48px;
+        height: auto;
+    }
+    
+    .menu .dropdown li:hover {
+        background-color: #b9b089;
+    }
+    /** --------------------------------------------------------------------------------
+                                        BODY
+        --------------------------------------------------------------------------------*/
+    
+    body{
+        font-family:"roboto", sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/marmol_oscuro.jpeg');
+        background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+    }
+    
+    .escaparate{
+        margin: 2%;
+        width: 25%;
+        box-shadow:2px 2px 5px rgba(221, 221, 221, 0.5) ;
+    }
+    
+    .informacion{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .info_general{
+        width: 65%;
+    }
+    
+    /** ---------
+        BANNER SERVICIOS
+        --------*/
+    .sec_servicios {
+        border: 1px solid #5f5f5f;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 5px rgba(255, 255, 255, 0.2);
+        text-align: center;
+        background: linear-gradient(to right, rgba(223, 223, 223, 0.47), rgba(125, 125, 125, 0.34));
+    }
+    
+    .h1_servicios{
+        font-family: "Angel Wish", sans-serif;
+        font-size: 60px;
+        font-weight: normal;
+        margin: 20px;
+        text-shadow: 2px 2px 4px rgba(173, 173, 173, 0.5);
+    }
+    
+    
+    
+    
+    /** ---------
+        SECCION TATUAJES PIERCINGS
+        --------*/
+    .columna{
+        text-align: center;
+        height: auto;
+    }
+    
+    .columna p{
+        margin: 0;
+        padding: 30px;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+    
+        max-width: 500px;
+        word-wrap: break-word;
+        
+    }
+    
+    .dos_col{
+        display: flex;
+        justify-content: space-around; 
+        align-items: center; 
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    
+    
+    /*--------------
+        CARRUSEL IMAGENES TATTOO
+    -----------*/
+    .slider-container{
+        position: relative; /* Esto asegura que los elementos hijos se queden dentro del flujo */
+        height: 600px;
+        overflow: hidden; /* Evita que las imágenes desborden */
+        border-radius: 10px;
+        box-shadow:5px 2px 5px rgba(66, 66, 66, 0.5) ;
+    }
+    
+    .slider{
+        background-image: url('../img/tattoos/medusa-albert.jpg');
+        background-size: cover;
+        border-radius: 10px;
+        animation: animate 15s infinite;
+       
+        height: 100%;
+        max-height: 600px;
+        width: 100%; 
+        max-width: 500px;
+    }
+    
+    @keyframes animate {
+        33% {
+            background-image: url('../img/tattoos/cara_mano.jpg');
+            background-size: cover;
+        }
+        66% {
+            background-image: url('../img/tattoos/mio.jpg');
+            background-size: cover;
+        }
+        99% {
+            background-image: url('../img/tattoos/medusa-albert.jpg');
+            background-size: cover;
+        }
+        
+    }
+    
+    /*--------------
+        CARRUSEL IMAGENES Piercings
+    -----------*/
+    
+    .slider_piercing{
+        background-image: url('../img/Piercings/entre_pechos.jpg');
+        background-size: cover;
+        height: 600px;
+        width: 500px;
+        border-radius: 10px;
+        animation: animate_piercing 15s infinite;
+    
+        width: 100%;
+        max-width: 500px;
+        
+    }
+    
+    @keyframes animate_piercing {
+        33% {
+            background-image: url('../img/Piercings/oreja.jpg');
+            background-size: cover;
+        }
+        66% {
+            background-image: url('../img/Piercings/septum.jpg');
+            background-size: cover;
+        }
+        99% {
+            background-image: url('../img/Piercings/entre_pechos.jpg');
+            background-size: cover;
+        }
+        
+    }
+    
+    
+    /*--------------
+        Botones debajo del carrusel
+    -----------*/
+    
+    .btn{
+        background-color: #E4E3E3;
+        border: 1px solid #ABAAAA;
+        box-shadow: 4px 4px 10px rgba(0,0,0, 0.6);
+        padding: 10px 20px;
+        font-size: 16px; 
+        font-family: 'Roboto',sans-serif;
+        border-radius: 5px; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+    
+        margin: 20px auto; /* Centra el botón y asegura espacio adecuado */
+        display: inline-block;
+    
+    }
+    
+    .btn a{
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .btn:hover{
+        background-color: #CAC7C7;
+    }
+    
+    .btn:active{
+        border-color: #8B8989;
+        background-color: #9C9A9A ;
+    }
+    
+    
+    /*--------------
+        Reseñas
+    -----------*/
+    
+    .sec_resenas {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    
+    /* Contenedor principal de las reseñas */
+    #reviews-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    /* Estilo para cada reseña */
+    .review {
+        width: 250px; 
+        height: 250px;
+        background-color: #f9f9f9;
+        padding: 15px;
+        border: 2px solid #ddd;
+        border-radius: 8px; /* Bordes redondeados para que no sean completamente cuadrados */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden; /* Esto evita que el contenido se desborde fuera de la caja */
+    }
+    
+    .review p {
+        color: #666;
+        font-size: 1em;
+        margin: 5px 0;
+        overflow-y: auto; /* Activa el scroll vertical si es necesario */
+        max-height: 150px; 
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        display: -webkit-box;
+        line-clamp: 9; /* Propiedad estándar para limitar el número de líneas */
+        -webkit-line-clamp: 9; 
+        -webkit-box-orient: vertical;
+    }
+    
+    .review:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Estilo del nombre del autor */
+    .review p strong {
+        font-size: 1.1em;
+        color: #333;
+    }
+    
+    /* Estilo de la calificación */
+    .review p {
+        color: #666;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    
+    
+    /* Para permitir el scroll si el contenido es demasiado largo */
+    .review p::-webkit-scrollbar {
+        width: 8px; /* Ancho de la barra de desplazamiento */
+    }
+    
+    .review p::-webkit-scrollbar-thumb {
+        background-color: #888; /* Color de la barra de desplazamiento */
+        border-radius: 4px;
+    }
+    
+    .review p::-webkit-scrollbar-thumb:hover {
+        background-color: #555; /* Cambio de color al pasar el ratón */
+    }
+    
+    
+    /** --------------------------------------------------------------------------------
+                                        FOOTER
+        --------------------------------------------------------------------------------*/
+    
+    /* Estilo para el pie de página */
+    .footer {
+        display: flex;
+        background: linear-gradient(to right, rgba(223, 223, 223, 0.47), rgba(125, 125, 125, 0.34));
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+    }
+    
+    /* Estilo para el artículo con los iconos */
+    .iconos {
+        display: flex;
+        justify-content: center; 
+        gap: 15px; 
+        align-items: center;
+        
+    }
+    
+    .iconos a {
+        display: block;
+    }
+    
+    .iconos img {
+        width: 40px;
+        height: auto; 
+        transition: transform 0.3s ease; 
+        filter: invert(1);
+    }
+    
+    .iconos img:hover {
+        transform: scale(1.2); 
+    }
+    
+    .contacto {
+        font-size: 20px;
+    }

@@ -1,0 +1,204 @@
+/** --------------------------------------------------------------------------------
+                                    HEADER
+    --------------------------------------------------------------------------------*/
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .logo{
+        margin: 0% 50%;
+        max-width: 150px;
+        width: 80px;
+        height: auto;
+        transition: width 0.3s ease;
+        
+    }
+    
+    
+    
+    /** ---------
+        MENÚ
+        --------*/
+    
+    
+    .menu{
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        color: black;
+        font-family:'Angel Wish', sans-serif;
+        transition: font-size 0.3s ease;
+        font-size: 40px;
+    
+    }
+    
+    .menu img{
+        transition: width 0.3s ease;
+        width: 40px;
+        height: auto;
+    }
+    
+    .menu .dropdown{
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ccc;
+        z-index: 1000;
+        top: 100%;
+        left: 50%;
+    }
+    
+    .menu .dropdown li{
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .menu a.cita.active + .dropdown {
+        display: block;
+    }
+    
+    
+    .menu .dropdown-paises{
+        display: none; /*Ocultado por defecto*/
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ccc;
+        z-index: 1000;
+        top: 100%;
+        right: 0px;
+    }
+    
+    .menu .dropdown-paises li{
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .menu a.pais.active + .dropdown-paises {
+        display: block;
+    }
+    
+    /*Este solo esta en el iniciado*/
+    .perfil{ 
+        border-radius: 100%;
+    }
+    
+    /** --------------------------------------------------------------------------------
+                                        Efectos
+        --------------------------------------------------------------------------------*/
+    
+    .logo:hover{
+        width: 90px;
+        height: auto;
+    }
+    .menu a:hover{
+        font-size: 48px;
+        text-shadow:2px 2px 5px rgba(0, 0, 0, 0.5); 
+        transition: text-shadow 0.3s ease;
+    }
+    
+    .icono_luna {
+        width: 50px; 
+        height: 50px;
+        
+        transition: filter 0.3s ease; 
+    }
+    
+    .icono_luna:hover {
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); 
+    }
+    
+    .bandera:hover{
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); 
+          
+    }
+    
+    .menu img:hover{
+        width: 48px;
+        height: auto;
+    }
+    
+    .menu .dropdown li:hover {
+        background-color: #f0f0f0;
+    }
+
+    body{
+        min-height: 100vh; /* El body ocupa toda la altura de la ventana */
+        margin: 0; 
+
+        display: flex;
+        flex-direction: column;
+        background-image: url('../img/Marmol.jpeg');
+        background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+
+    main {
+        flex: 1; /* El contenido principal ocupa el espacio restante */
+        display: flex; /* Si necesitas centrar el contenido del main */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error{
+        font-size: 150px;
+        font-family: 'Angel wish', sans-serif;
+    }
+
+    .caja {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: auto; 
+        text-align: center; /* Centra el texto dentro del párrafo */
+    }
+    
+
+    
+.footer {
+    display: flex;
+    background: linear-gradient(to right, rgba(223, 223, 223, 0.47), rgba(125, 125, 125, 0.34));
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+/* Estilo para el artículo con los iconos */
+.iconos {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    align-items: center;
+}
+
+.iconos a {
+    display: block;
+}
+
+.iconos img {
+    width: 40px;
+    height: auto; 
+    transition: transform 0.3s ease; 
+}
+
+.iconos img:hover {
+    transform: scale(1.2); 
+}
+
+.contacto {
+    font-size: 20px;
+}
