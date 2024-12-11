@@ -46,21 +46,26 @@
                 <!--Prueba para enviarlo a google forms-->
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfzU_Z1nm5D6jvKwYJ3DpUERbc7UNzDx8A_vDCg_KPibBXMag/formResponse" id="miFormulario" >
 
-                    <label for="name">Nombre</label>
-                    <input type="text" name="entry.1686728834" id="name" required placeholder="Jorge sanchez">
+                    <div class="caja">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="entry.1686728834" id="name" required placeholder="Jorge sanchez">
+                        
+    
+                        <label for="email">Correo electrónico</label>
+                        <input type="text" name="entry.1845406314" id="email" required placeholder="Jorgesan@gmail.com">
+                    </div>
                     
-
-                    <label for="email">Correo electrónico</label>
-                    <input type="text" name="entry.1845406314" id="email" required placeholder="Jorgesan@gmail.com">
-
-                    <label for="pass">Contraseña</label>
-                    <input type="password" name="entry.28930565" id="pass" required>
-
-                    <label for="dob">Fecha de nacimiento</label>
-                    <input type="date" name="entry.326403625" id="dob" required>
+                    <div class="caja2">
+                        <label for="pass">Contraseña</label>
+                        <input type="password" name="entry.28930565" id="pass" required>
+    
+                        <label for="dob">Fecha de nacimiento</label>
+                        <input type="date" name="entry.326403625" id="dob" required>
+                    </div>
 
                     <button type="submit"> Enviar</button>
                 </form>
+                <p>Ya tienes cuenta? <a href="login.html">inicia sesión aqui</a></p>
             </article>
         </section>
       

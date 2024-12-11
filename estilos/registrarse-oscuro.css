@@ -178,6 +178,26 @@ body{
     margin-bottom: 30px;
 }
 
+.articulo p{
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    
+}
+.articulo a{
+    text-decoration: none;
+    color: black;
+}
+
+.caja{
+    margin: 20px; 
+    
+    
+}
+
+.caja input{
+    margin-right: 20px;
+}
+
 #miFormulario{
     display: flex;
     flex-direction: column;
@@ -228,7 +248,6 @@ input[type="date"]:focus {
 
 /*Estilo para el boton*/
 button[type="submit"] {
-    color: #000;
     padding: 12px;
     border: 1px solid #ABAAAA;
     background-color: #E4E3E3;
@@ -236,8 +255,9 @@ button[type="submit"] {
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 50%;
+    align-self: center;
 }
-
 /*Estilo para el boton cuando este hover*/
 button[type="submit"]:hover {
     padding: 12px;

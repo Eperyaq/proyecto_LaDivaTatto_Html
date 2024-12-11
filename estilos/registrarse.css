@@ -165,13 +165,44 @@ body{
     align-items: center;
     justify-content: center;
     margin: 20px;
+    
 }
+
+
 .articulo h1{
     
     font-size: 60px;
     font-family: 'Angel wish', sans-serif;
     font-weight: normal;
     margin-bottom: 30px;
+}
+
+.articulo p{
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    
+}
+.articulo a{
+    text-decoration: none;
+    color: black;
+}
+
+.caja{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: 20px; 
+    
+}
+.caja2{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    margin: 20px; 
+}
+
+.caja input{
+    margin-right: 200px;
 }
 
 #miFormulario{
@@ -230,6 +261,8 @@ button[type="submit"] {
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 50%;
+    align-self: center;
 }
 
 /*Estilo para el boton cuando este hover*/
