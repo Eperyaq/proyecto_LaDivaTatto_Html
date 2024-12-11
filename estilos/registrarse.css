@@ -152,10 +152,15 @@ body{
     font-family:"roboto", sans-serif;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     background-image: url('../img/marmol.jpeg');
     background-size: cover; /* Escala la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen en la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+main {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
 }
 
 .articulo{
@@ -177,11 +182,7 @@ body{
     margin-bottom: 30px;
 }
 
-.articulo p{
-    font-family: 'roboto', sans-serif;
-    font-size: 20px;
-    
-}
+
 .articulo a{
     text-decoration: none;
     color: black;
@@ -205,34 +206,10 @@ body{
     margin-right: 200px;
 }
 
-#miFormulario{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 20px;
-}
 
-label {
-    font-family: 'roboto', sans-serif;
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
 
-/*Estilo de los inputs*/
-input[type="text"],
-input[type="password"],
-input[type="date"] {
-    padding: 15px;
-    font-size: 15px;
-    border: 1px solid #E6E6E6;
-    border-radius: 8px;
-    background-color: #ffffff;
-    outline: none;
-    box-shadow:2px 4px 5px rgba(0, 0, 0, 0.3) ;
-    
-}
+
+
 
 /* Estilo para cuando el input está enfocado */
 input[type="text"]:hover,
@@ -243,14 +220,6 @@ input[type="date"]:hover {
     transition: background-color 0.3s ease;
 }
 
-
-/* Estilo para cuando el input está enfocado */
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus {
-    border: 1px solid #E6E6E6;
-    background-color: #E9E9E9;
-}
 
 /*Estilo para el boton*/
 button[type="submit"] {
@@ -280,6 +249,60 @@ button[type="submit"]:focus {
     background-color: #9C9A9A;
     transition: background-color 0.3s ease;
 }
+
+
+/* Estilo para el formulario */
+#miFormulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espaciado entre filas y columnas */
+    margin: 20px;
+}
+
+/* Los botones y el enlace ocuparán toda la fila */
+#miFormulario button[type="submit"] {
+    grid-column: 1 / -1; /* Ocupa ambas columnas */
+    align-self: center;
+    justify-self: center;
+}
+
+.articulo p {
+    grid-column: 1 / -1; /* El texto "Ya tienes cuenta" ocupa ambas columnas */
+    text-align: center;
+}
+
+/* Ajustes generales */
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Efectos al enfocar */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+    background-color: #F6F6F6;
+    border-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+
 
 /** --------------------------------------------------------------------------------
                                     FOOTER

@@ -44,26 +44,29 @@
                 <h1>Registrarse</h1>
 
                 <!--Prueba para enviarlo a google forms-->
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfzU_Z1nm5D6jvKwYJ3DpUERbc7UNzDx8A_vDCg_KPibBXMag/formResponse" id="miFormulario" >
-
-                    <div class="caja">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfzU_Z1nm5D6jvKwYJ3DpUERbc7UNzDx8A_vDCg_KPibBXMag/formResponse" id="miFormulario">
+                    <!-- Primera columna -->
+                    <div>
                         <label for="name">Nombre</label>
-                        <input type="text" name="entry.1686728834" id="name" required placeholder="Jorge sanchez">
-                        
-    
-                        <label for="email">Correo electrónico</label>
-                        <input type="text" name="entry.1845406314" id="email" required placeholder="Jorgesan@gmail.com">
+                        <input type="text" name="entry.1686728834" id="name" required placeholder="Jorge Sanchez">
                     </div>
-                    
-                    <div class="caja2">
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="text" name="entry.1845406314" id="email" required placeholder="jorgesan@gmail.com">
+                    </div>
+                
+                    <!-- Segunda columna -->
+                    <div>
                         <label for="pass">Contraseña</label>
                         <input type="password" name="entry.28930565" id="pass" required>
-    
+                    </div>
+                    <div>
                         <label for="dob">Fecha de nacimiento</label>
                         <input type="date" name="entry.326403625" id="dob" required>
                     </div>
-
-                    <button type="submit"> Enviar</button>
+                
+                    <!-- Botón enviar -->
+                    <button type="submit">Enviar</button>
                 </form>
                 <p>Ya tienes cuenta? <a href="login.html">inicia sesión aqui</a></p>
             </article>
