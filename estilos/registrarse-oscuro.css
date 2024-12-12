@@ -5,151 +5,148 @@
     color: #e0e0e0;
 }
 /** --------------------------------------------------------------------------------
-                                        HEADER
-        --------------------------------------------------------------------------------*/
-        .navbar{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-        
-        .logo{
-            margin: 0% 50%;
-            max-width: 150px;
-            width: 80px;
-            height: auto;
-            transition: width 0.3s ease;
-            
-        }
-        
-        
-        
-        /** ---------
-            MENÚ
-            --------*/
-        
-        
-        .menu{
-            display: flex;
-            gap: 30px;
-            margin-left: auto;
-            position: relative;
-        }
-        
-        .menu a{
-            text-decoration: none;
-            font-family:'Angel Wish', sans-serif;
-            transition: font-size 0.3s ease;
-            font-size: 40px;
-        
-        }
-        
-        .menu img{
-            transition: width 0.3s ease;
-            width: 40px;
-            height: auto;
-        }
-        
-        .menu .dropdown{
-            display: none;
-            list-style-type: none;
-            padding: 0;
-            position: absolute;
-            background-color: #c0b68b;
-            border: 1px solid #d9ce9f;
-            z-index: 1000;
-            top: 100%;
-            left: 50%;
-        }
-        
-        .menu .dropdown li{
-            padding: 10px;
-            cursor: pointer;
-        }
-        
-        
-        .menu a.cita.active + .dropdown {
-            display: block;
-        }
-        
-        
-        .menu .dropdown-paises{
-            display: none; /*Ocultado por defecto*/
-            list-style-type: none;
-            padding: 0;
-            position: absolute;
-            background-color: #c0b68b;
-            border: 1px solid #d9ce9f;
-            z-index: 1000;
-            top: 100%;
-            right: 0px;
-        }
-        
-        .menu .dropdown-paises li{
-            padding: 10px;
-            cursor: pointer;
-        }
-        
-        .menu a.pais.active + .dropdown-paises {
-            display: block;
-        }
-        
-        /*Este solo esta en el iniciado*/
-        .perfil{ 
-            border-radius: 100%;
-        }
-        
-        /** --------------------------------------------------------------------------------
-                                            Efectos
-            --------------------------------------------------------------------------------*/
-        
-        .logo:hover{
-            width: 90px;
-            height: auto;
-        }
-        .menu a:hover{
-            font-size: 48px;
-            text-shadow: 4px 4px 5px rgba(173, 173, 173, 0.5);
-            transition: text-shadow 0.3s ease;
-        }
-        
-        .icono_sol {
-            width: 50px; 
-            height: 50px;
-            filter: invert(1);
-            transition: filter 0.3s ease; 
-        }
-        
-        .icono_sol:hover {
-            filter: invert(1) drop-shadow(4px 4px 5px rgba(217, 206, 159, 0.5));
-        }
-        
-        .bandera:hover{
-            filter: drop-shadow(4px 4px 4px rgba(217, 206, 159, 0.5)); 
-              
-        }
-
-        .fuera:hover{
-            filter: drop-shadow(4px 4px 4px rgba(77, 65, 14, 0.5));
-        }
-        
-        
-        .menu img:hover{
-            width: 48px;
-            height: auto;
-        }
-        
-        .menu .dropdown li:hover {
-            background-color: #f0f0f0;
-        }
+                                    HEADER
+    --------------------------------------------------------------------------------*/
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
     
-
-
-
+    .logo{
+        margin: 0% 50%;
+        max-width: 150px;
+        width: 80px;
+        height: auto;
+        transition: width 0.3s ease;
+        
+    }
+    
+    
+    
+    /** ---------
+        MENÚ
+        --------*/
+    
+    
+    .menu{
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+        position: relative;
+    }
+    
+    .menu a{
+        text-decoration: none;
+        font-family:'Angel Wish', sans-serif;
+        transition: font-size 0.3s ease;
+        font-size: 40px;
+    
+    }
+    
+    .menu img{
+        transition: width 0.3s ease;
+        width: 40px;
+        height: auto;
+    }
+    
+    .menu .dropdown{
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        background-color: #c0b68b;
+        border: 1px solid #d9ce9f;
+        z-index: 1000;
+        top: 100%;
+        left: 50%;
+    }
+    
+    .menu .dropdown li{
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .menu a.cita.active + .dropdown {
+        display: block;
+    }
+    
+    
+    .menu .dropdown-paises{
+        display: none; /*Ocultado por defecto*/
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        background-color: #c0b68b;
+        border: 1px solid #d9ce9f;
+        z-index: 1000;
+        top: 100%;
+        right: 0px;
+    }
+    
+    .menu .dropdown-paises li{
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .menu a.pais.active + .dropdown-paises {
+        display: block;
+    }
+    
+    /*Este solo esta en el iniciado*/
+    .perfil{ 
+        border-radius: 100%;
+    }
+    
 /** --------------------------------------------------------------------------------
-                            Body
---------------------------------------------------------------------------------*/
+                                    Efectos
+    --------------------------------------------------------------------------------*/
+    
+    .logo:hover{
+        width: 90px;
+        height: auto;
+    }
+    .menu a:hover{
+        font-size: 48px;
+        text-shadow: 4px 4px 5px rgba(173, 173, 173, 0.5);
+        transition: text-shadow 0.3s ease;
+    }
+    
+    .icono_sol {
+        width: 50px; 
+        height: 50px;
+        filter: invert(1);
+        transition: filter 0.3s ease; 
+    }
+    
+    .icono_sol:hover {
+        filter: invert(1) drop-shadow(4px 4px 5px rgba(217, 206, 159, 0.5));
+    }
+    
+    
+    .bandera:hover{
+        filter: drop-shadow(4px 4px 4px rgba(217, 206, 159, 0.5));
+          
+    }
+    
+    .fuera:hover{
+        filter: drop-shadow(4px 4px 4px rgba(77, 65, 14, 0.5));
+    }
+
+    .menu img:hover{
+        width: 48px;
+        height: auto;
+    }
+    
+    .menu .dropdown li:hover {
+        background-color: #f0f0f0;
+    }
+
+
+
+
 
 /** --------------------------------------------------------------------------------
                             Body
@@ -187,31 +184,15 @@ main {
     font-family: 'Angel wish', sans-serif;
     font-weight: normal;
     margin-bottom: 30px;
+    
 }
 
 
 .articulo a{
     text-decoration: none;
-    color: black;
+    color: #d6d4d4;
 }
 
-.caja{
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    margin: 20px; 
-    
-}
-.caja2{
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    margin: 20px; 
-}
-
-.caja input{
-    margin-right: 200px;
-}
 
 
 
@@ -225,6 +206,7 @@ input[type="date"]:hover {
     border: 1px solid #E6E6E6;
     background-color: #F6F6F6;
     transition: background-color 0.3s ease;
+    
 }
 
 
@@ -264,6 +246,7 @@ button[type="submit"]:focus {
     grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
     gap: 20px; /* Espaciado entre filas y columnas */
     margin: 20px;
+    
 }
 
 /* Los botones y el enlace ocuparán toda la fila */
@@ -271,20 +254,22 @@ button[type="submit"]:focus {
     grid-column: 1 / -1; /* Ocupa ambas columnas */
     align-self: center;
     justify-self: center;
+    color: black;
 }
 
 .articulo p {
     grid-column: 1 / -1; /* El texto "Ya tienes cuenta" ocupa ambas columnas */
     text-align: center;
+    color: #d6d4d4;
 }
 
 /* Ajustes generales */
 label {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: #333;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #d6d4d4;
 }
 
 input[type="text"],
@@ -294,17 +279,27 @@ input[type="date"] {
     font-size: 14px;
     border: 1px solid #E6E6E6;
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: #dddbdb;
     outline: none;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
+    color: black
+}
+
+/* Efectos al enfocar */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="date"]:hover {
+    background-color: #cecdcd;
+    border-color: #E6E6E6;
+    transition: background-color 0.3s ease;
 }
 
 /* Efectos al enfocar */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus {
-    background-color: #F6F6F6;
+    background-color: #b3b0b0;
     border-color: #ccc;
     transition: background-color 0.3s ease;
 }
@@ -342,6 +337,7 @@ input[type="date"]:focus {
         width: 40px;
         height: auto; 
         transition: transform 0.3s ease; 
+        filter: invert(1);
     }
     
     .iconos img:hover {

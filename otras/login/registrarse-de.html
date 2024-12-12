@@ -7,17 +7,17 @@
     <title>Registrieren</title>
 </head>
 <body>
-    
+
     <header class="navbar">
         
-        <a href="#"><img src="../../img/logo_Diva.png" alt="logo_DivaTattoo" class="logo"></a>
+        <a href="#"><img src="../../img/logo_Diva.png" alt="Diva Tattoo Logo" class="logo"></a>
 
         <nav class="menu">
-            <a href="../dark-mode/registrarse-de-oscuro.html"><img src="../../iconos/luna.svg" alt="Mondsymbol" class="icono_luna"></a>
-            <a href="#">Startseite</a>
+            <a href="../dark-mode/registrarse-oscuro.html"><img src="../../iconos/luna.svg" alt="Mondsymbol" class="icono_luna"></a>
+            <a href="../iniciado/iniciado-de.html">Startseite</a>
             <a href="../sobre-nosotros/sobre-nosotros.html">Über uns</a>
 
-            <a href="#" class="cita">Vereinbare deinen Termin</a>
+            <a href="#" class="cita">Termin buchen</a>
 
             <ul class="dropdown">
                 <li><a href="#">Tattoo-Termin</a></li>
@@ -26,14 +26,13 @@
             
             <a href="#"><img src="../../img/stitch.jpg" alt="Profilbild" class="perfil"></a>
 
-
             <a href="#" class="pais">
                 
-                <img src="../../img/aleman.png" alt="Deutschland Flagge" class="bandera">
+                <img src="../../img/aleman.png" alt="Deutsche Flagge" class="bandera"></a>
             </a>
             <ul class="dropdown-paises">
                 <li><a href="registrarse.html"><img src="../../img/banderaEsp.png" alt="Spanische Flagge" class="bandera"></a></li>
-                <li><a href="registrarse-en.html"><img src="../../img/reino-unido.png" alt="UK Flagge" class="bandera"></a></li> <!-- Seite auf Sprache ändern-->
+                <li><a href="registrarse-en.html"><img src="../../img/reino-unido.png" alt="Britische Flagge" class="bandera"></a></li>
                 
             </ul>
 
@@ -45,24 +44,27 @@
             <article class="articulo">
                 <h1>Registrieren</h1>
 
-                <!-- Test um es zu Google Forms zu senden -->
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfzU_Z1nm5D6jvKwYJ3DpUERbc7UNzDx8A_vDCg_KPibBXMag/formResponse" id="miFormulario" >
+                <form id="miFormulario">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Jorge Sanchez">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input type="text" id="email" required placeholder="jorgesan@gmail.com">
+                    </div>
+                    <div>
+                        <label for="pass">Passwort</label>
+                        <input type="password" id="pass" required placeholder="*******">
+                    </div>
+                    <div>
+                        <label for="dob">Geburtsdatum</label>
+                        <input type="date" id="dob" required>
+                    </div>
 
-                    <label for="name">Name</label>
-                    <input type="text" name="entry.1686728834" id="name" required placeholder="Jorge Sanchez">
-                    
-
-                    <label for="email">E-Mail</label>
-                    <input type="text" name="entry.1845406314" id="email" required placeholder="Jorgesan@gmail.com">
-
-                    <label for="pass">Passwort</label>
-                    <input type="password" name="entry.28930565" id="pass" required>
-
-                    <label for="dob">Geburtsdatum</label>
-                    <input type="date" name="entry.326403625" id="dob" required>
-
-                    <button type="submit"> Absenden</button>
+                    <button type="submit">Einreichen</button>
                 </form>
+                <p>Haben Sie bereits ein Konto? <a href="login-de.html">Hier anmelden</a></p>
             </article>
         </section>
       
@@ -72,7 +74,7 @@
         <article class="contacto">
             <h3>Kontakt</h3>
             <p>
-                C.palangre.1.local, 35510 Puerto Del Carmen, Tías, Spanien <br>
+                C.palangre.1.local,35510 Puerto Del Carmen, Tías, Spanien <br>
                 660 59 31 54 <br>
                 ladivatattoo@gmail.com
             </p>
@@ -80,12 +82,10 @@
         
         <article class="iconos">
             <h3>Soziale Medien</h3>
-            <a href="https://www.instagram.com/la_diva_tattoo/"><img src="../../iconos/logo-instagram.svg" alt="Instagram Logo"></a>
-            <a href="https://www.facebook.com/profile.php?id=61553597955917"><img src="../../iconos/logo-facebook.svg" alt="Facebook Logo"></a>
-            <a href="https://www.tiktok.com/@la.diva.tattoo?lang=es"><img src="../../iconos/logo-tiktok.svg" alt="TikTok Logo"></a>
+            <a href="https://www.instagram.com/la_diva_tattoo/"><img src="../../iconos/logo-instagram.svg" alt="Instagram-Logo"></a>
+            <a href="https://www.facebook.com/profile.php?id=61553597955917"><img src="../../iconos/logo-facebook.svg" alt="Facebook-Logo"></a>
+            <a href="https://www.tiktok.com/@la.diva.tattoo?lang=es"><img src="../../iconos/logo-tiktok.svg" alt="TikTok-Logo"></a>
         </article>
-        
-
     </footer>
 
 <script src="../../js/cita.js"></script>
