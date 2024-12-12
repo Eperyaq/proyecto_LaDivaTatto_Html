@@ -223,6 +223,11 @@ button[type="submit"] {
     align-self: center;
 }
 
+button[type="submit"] a{
+    color: black;
+    text-decoration: none;
+}
+
 /*Estilo para el boton cuando este hover*/
 button[type="submit"]:hover {
     padding: 12px;
