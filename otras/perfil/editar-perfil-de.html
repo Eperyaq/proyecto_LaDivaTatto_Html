@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/perfil.css">
+    <title>Profil bearbeiten</title>
+</head>
+<body>
+    
+    <header class="navbar">
+        
+        <a href="../iniciado/iniciado-de.html"><img src="../../img/logo_Diva.png" alt="logo_DivaTattoo" class="logo"></a>
+
+        <nav class="menu">
+            <a href="../dark-mode/editar-perfil-de-oscuro.html"><img src="../../iconos/luna.svg" alt="Mond-Symbol" class="icono_luna"></a>
+            <a href="../iniciado/iniciado-de.html">Startseite</a>
+            <a href="../sobre-nosotros/sobre-nosotros-de.html">Über uns</a>
+
+            <a href="#" class="cita">Vereinbare deinen Termin</a>
+
+            <ul class="dropdown">
+                <li><a href="#">Tattoo-Termin</a></li>
+                <li><a href="#">Piercing-Termin</a></li>
+            </ul>
+            
+            <a href="perfil.html"><img src="../../img/stitch.jpg" alt="Profilbild" class="perfil"></a>
+
+
+            <a class="pais">
+                <img src="../../img/aleman.png" alt="Flagge von Deutschland" class="bandera">
+            </a>
+            <ul class="dropdown-paises">
+                <li><a href="editar-perfil.html"><img src="../../img/banderaEsp.png" alt="Flagge von Spanien" class="bandera"></a></li>
+                <li><a href="editar-perfil-en.html"><img src="../../img/reino-unido.png" alt="Flagge des Vereinigten Königreichs" class="bandera"></a></li>
+               
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="titulo">
+            <article>
+                <h1 class="h1_angel">Profil bearbeiten</h1>
+            </article>
+        </section>
+
+        <section class="pilar">
+            <article class="cuerpo">
+                <img src="../../img/stitch.jpg" alt="Profilbild">
+    
+                <article class="datos">
+                    <h2>Jhon Doe</h2>
+                </article>
+                
+            </article>
+
+            <article class="derecha">
+
+                <form id="miFormulario">
+                    <!-- Erste Spalte -->
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="Jorge Sanchez">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input type="text" id="email" required placeholder="jorgesan@gmail.com">
+                    </div>
+                
+                    <!-- Zweite Spalte -->
+                    <div>
+                        <label for="pass">Altes Passwort</label>
+                        <input type="password" id="pass1" required placeholder="*******">
+                    </div>
+
+                    <div>
+                        <label for="pass">Neues Passwort</label>
+                        <input type="password" id="pass2" required placeholder="*******">
+                    </div>
+
+                    <div>
+                        <label for="dob">Geburtsdatum</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                
+                    <!-- Absenden-Button -->
+                    <button type="submit">Änderungen speichern</button>
+                </form>
+
+
+            </article>
+
+        </section>
+        
+        <footer class="footer">
+            <article class="contacto">
+                <h3>Kontakt</h3>
+                <p>
+                    C.palangre.1.local,35510 Puerto Del Carmen, Tías, Spanien <br>
+                    660 59 31 54 <br>
+                    ladivatattoo@gmail.com
+                </p>
+            </article>
+            
+            <article class="iconos">
+                <h3>Soziale Medien</h3>
+                <a href="https://www.instagram.com/la_diva_tattoo/"><img src="../../iconos/logo-instagram.svg" alt="Instagram-Logo"></a>
+                <a href="https://www.facebook.com/profile.php?id=61553597955917"><img src="../../iconos/logo-facebook.svg" alt="Facebook-Logo"></a>
+                <a href="https://www.tiktok.com/@la.diva.tattoo?lang=es"><img src="../../iconos/logo-tiktok.svg" alt="TikTok-Logo"></a>
+            </article>
+            
+    
+        </footer>
+
+    </main>
+    <script src="../../js/cita.js"></script>
+</body>
+</html>

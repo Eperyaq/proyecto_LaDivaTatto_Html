@@ -183,35 +183,6 @@ main {
     
 }
 
-
-.articulo a{
-    text-decoration: none;
-    color: black;
-}
-
-.caja{
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    margin: 20px; 
-    
-}
-.caja2{
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    margin: 20px; 
-}
-
-.caja input{
-    margin-right: 200px;
-}
-
-
-
-
-
-
 /* Estilo para cuando el input está enfocado */
 input[type="text"]:hover,
 input[type="password"]:hover,
