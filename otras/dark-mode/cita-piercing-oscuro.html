@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../estilos/citas-oscuro.css">
-    <title>Pedir cita tattoo</title>
+    <title>Pedir cita piercing</title>
 </head>
 <body>
     <header class="navbar">
@@ -12,7 +12,7 @@
         <a href="iniciado-oscuro.html"><img src="../../img/logo_Diva_oscuro.png" alt="logo_DivaTattoo" class="logo"></a>
 
         <nav class="menu">
-            <a href="../citas/cita-tattoo.html"><img src="../../iconos/soleado.svg" alt="sun icon" class="icono_sol"></a>
+            <a href="../citas/cita-piercing.html"><img src="../../iconos/soleado.svg" alt="sun icon" class="icono_sol"></a>
             <a href="iniciado-oscuro.html">Inicio</a>
             <a href="sobre-nosotros-oscuro.html">Sobre nosotros</a>
 
@@ -30,8 +30,8 @@
                 <img src="../../img/banderaEsp.png" alt="bandera de españa" class="bandera">
             </a>
             <ul class="dropdown-paises">
-                <li><a href="cita-tattoo-en-oscuro.html"><img src="../../img/reino-unido.png" alt="bandera del reino-unido" class="bandera fuera"></a></li> <!-- Cambiar idioma de la pagina-->
-                <li><a href="cita-tattoo-de-oscuro.html"><img src="../../img/aleman.png" alt="bandera de alemania" class="bandera fuera"></a></li>
+                <li><a href="cita-piercing-en-oscuro.html"><img src="../../img/reino-unido.png" alt="bandera del reino-unido" class="bandera fuera"></a></li> <!-- Cambiar idioma de la pagina-->
+                <li><a href="cita-piercing-de-oscuro.html"><img src="../../img/aleman.png" alt="bandera de alemania" class="bandera fuera"></a></li>
             </ul>
 
         </nav>
@@ -40,12 +40,12 @@
 
     <main>
         <section class="titulo">
-            <h1 class="h1_angel">Reserva tu cita para tatuarte</h1>
+            <h1 class="h1_angel">Reserva tu cita para hacerte un piercing</h1>
         </section>
 
         <section>
             <article class="formulario">
-                <form action="iniciado-oscuro.html">
+                <form action="../iniciado/iniciado.html">
                     <div>
                       <label for="name">Tu nombre</label>
                       <input type="text" id="name" name="name" required>
@@ -59,8 +59,14 @@
                       <input type="tel" id="contact" name="contact" required>
                     </div>
                     <div>
-                      <label for="tattoo-artist">Tatuador</label><br>
-                      <input type="text" id="tattoo-artist" name="tattoo-artist">
+                        <label for="size">¿Que piercing quieres?</label><br>
+                        <select id="size" name="size" required>
+                            <option value="">Selecciona un piercing</option>
+                            <option value="oreja">Oreja (Lóbulo, Helix, Tragus, Concha, Daith...) - 20 euros de señal. </option>
+                            <option value="cara">Cara (Ceja, puente, nariz, septum, labret, monroe...) - 30 euros de señal. </option>
+                            <option value="100">Cuerpo (Ombligo, Pezón, surface, dermal...) - 40 euros de señal. </option>
+                            <option value="?">No lo tengo claro</option>
+                        </select>
                     </div>
                     <div>
                       <label for="date">Fecha</label><br>
@@ -71,26 +77,8 @@
                       <input type="time" id="hours" name="hours">
                     </div>
                     <div>
-                      <label for="description">¿Qué te quieres tatuar?</label>
-                      <textarea id="description" name="description" rows="4"></textarea>
-                    </div>
-                    <div>
                       <label for="notes">Notas (Opcional)</label>
                       <textarea id="notes" name="notes" rows="4"></textarea>
-                    </div>
-                    <div>
-                        <label for="size">Tamaño del tatuaje</label><br>
-                        <select id="size" name="size" required>
-                            <option value="">Selecciona un tamaño</option>
-                            <option value="20">20 cm - 20 euros de señal</option>
-                            <option value="50">50 cm - 50 euros de señal</option>
-                            <option value="100">100 cm - 100 euros de señal</option>
-                            <option value="?">No lo tengo claro</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="design">Pon tu idea de diseño (Opcional)</label>
-                        <input type="file" id="design" name="design">
                     </div>
                     <button type="submit">Reservar</button>
                 </form>
@@ -119,7 +107,6 @@
         
 
     </footer>
-
     <script src="../../js/cita.js"></script>
 </body>
 </html>

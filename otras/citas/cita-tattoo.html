@@ -45,42 +45,42 @@
 
         <section>
             <article class="formulario">
-                <form>
+                <form action="../iniciado/iniciado.html">
                     <div>
                       <label for="name">Tu nombre</label>
-                      <input type="text" id="name" name="name" required>
+                      <input type="text" id="name" name="name" required tabindex="1">
                     </div>
                     <div>
                       <label for="email">Tu Email</label><br>
-                      <input type="email" id="email" name="email" required>
+                      <input type="email" id="email" name="email" required tabindex="2">
                     </div>
                     <div>
                       <label for="contact">Número de contacto</label>
-                      <input type="tel" id="contact" name="contact" required>
+                      <input type="tel" id="contact" name="contact" required tabindex="3">
                     </div>
                     <div>
                       <label for="tattoo-artist">Tatuador</label><br>
-                      <input type="text" id="tattoo-artist" name="tattoo-artist">
+                      <input type="text" id="tattoo-artist" name="tattoo-artist" tabindex="4">
                     </div>
                     <div>
                       <label for="date">Fecha</label><br>
-                      <input type="date" id="date" name="date" required>
+                      <input type="date" id="date" name="date" required tabindex="5">
                     </div>
                     <div>
                       <label for="hours">Horas Disponibles</label>
-                      <input type="time" id="hours" name="hours">
+                      <input type="time" id="hours" name="hours" tabindex="6">
                     </div>
                     <div>
-                      <label for="description">¿Qué te quieres tatuar? ¿En qué parte del cuerpo?</label>
-                      <textarea id="description" name="description" rows="4"></textarea>
+                      <label for="description">¿Qué te quieres tatuar?</label>
+                      <textarea id="description" name="description" rows="4"  tabindex="7"></textarea>
                     </div>
                     <div>
                       <label for="notes">Notas (Opcional)</label>
-                      <textarea id="notes" name="notes" rows="4"></textarea>
+                      <textarea id="notes" name="notes" rows="4"  tabindex="8"></textarea>
                     </div>
                     <div>
                         <label for="size">Tamaño del tatuaje</label><br>
-                        <select id="size" name="size" required>
+                        <select id="size" name="size" required tabindex="9">
                             <option value="">Selecciona un tamaño</option>
                             <option value="20">20 cm - 20 euros de señal</option>
                             <option value="50">50 cm - 50 euros de señal</option>
@@ -92,7 +92,7 @@
                         <label for="design">Pon tu idea de diseño (Opcional)</label>
                         <input type="file" id="design" name="design">
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit"  tabindex="10">Reservar</button>
                 </form>
             </article>
             

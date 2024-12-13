@@ -46,7 +46,7 @@
 
         <section>
             <article class="formulario">
-                <form>
+                <form action="../iniciado/iniciado-en.html">
                     <div>
                       <label for="name">Your name</label>
                       <input type="text" id="name" name="name" required>
@@ -80,14 +80,21 @@
                       <textarea id="notes" name="notes" rows="4"></textarea>
                     </div>
                     <div>
-                        <label for="notes">Price</label><br>
-                        <input type="text" id="precio" name="precio" required placeholder="varies by size">
+                        <label for="size">Tattoo size</label><br>
+                        <select id="size" name="size" required>
+                            <option value="">Select a size</option>
+                            <option value="20">20 cm - 20 euros deposit</option>
+                            <option value="50">50 cm - 50 euros deposit</option>
+                            <option value="100">100 cm - 100 euros deposit</option>
+                            <option value="?">I'm not sure</option>
+                        </select>
+
                     </div>
                     <div>
                         <label for="design">Put your design idea (Optional)</label>
                         <input type="file" id="design" name="design">
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Reserve</button>
                 </form>
             </article>
             

@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../estilos/citas.css">
-    <title>Piercing Appointment</title>
+    <link rel="stylesheet" href="../../estilos/citas-oscuro.css">
+    <title>Request Tattoo Appointment</title>
 </head>
 <body>
     <header class="navbar">
         
-        <a href="../iniciado/iniciado-en.html"><img src="../../img/logo_Diva.png" alt="logo_DivaTattoo" class="logo"></a>
+        <a href="iniciado-en-oscuro.html"><img src="../../img/logo_Diva_oscuro.png" alt="logo_DivaTattoo" class="logo"></a>
 
         <nav class="menu">
-            <a href="../dark-mode/cita-piercing-en-oscuro.html"><img src="../../iconos/luna.svg" alt="moon icon" class="icono_luna"></a>
-            <a href="../iniciado/iniciado-en.html">Home</a>
-            <a href="../sobre-nosotros/sobre-nosotros-en.html">About Us</a>
+            <a href="../citas/cita-tattoo-en.html"><img src="../../iconos/soleado.svg" alt="sun icon" class="icono_sol"></a>
+            <a href="iniciado-en-oscuro.html">Home</a>
+            <a href="sobre-nosotros-en-oscuro.html">About Us</a>
 
             <a href="#" class="cita">Book your appointment</a>
 
             <ul class="dropdown">
-                <li><a href="cita-tattoo-en.html">Tattoo Appointment</a></li>
-                <li><a href="cita-piercing-en.html">Piercing Appointment</a></li>
+                <li><a href="cita-tattoo-en-oscuro.html">Tattoo Appointment</a></li>
+                <li><a href="cita-piercing-en-oscuro.html">Piercing Appointment</a></li>
             </ul>
             
-            <a href="../perfil/perfil-en.html"><img src="../../img/stitch.jpg" alt="profile picture" class="perfil"></a>
+            <a href="perfil-en-oscuro.html"><img src="../../img/stitch.jpg" alt="profile picture" class="perfil"></a>
 
 
             <a class="pais">
+                
                 <img src="../../img/reino-unido.png" alt="United Kingdom flag" class="bandera">
             </a>
             <ul class="dropdown-paises">
-                <li><a href="cita-piercing.html"><img src="../../img/banderaEsp.png" alt="Spain flag" class="bandera"></a></li> <!-- Change page language-->
-                <li><a href="cita-piercing-de.html"><img src="../../img/aleman.png" alt="Germany flag" class="bandera"></a></li>
+                <li><a href="cita-tattoo-oscuro.html"><img src="../../img/banderaEsp.png" alt="Spain flag" class="bandera fuera"></a></li> <!-- Change page language-->
+                <li><a href="cita-tattoo-de-oscuro.html"><img src="../../img/aleman.png" alt="Germany flag" class="bandera fuera"></a></li>
             </ul>
 
         </nav>
@@ -40,7 +41,7 @@
 
     <main>
         <section class="titulo">
-            <h1 class="h1_angel">Book your piercing appointment</h1>
+            <h1 class="h1_angel">Book your tattoo appointment</h1>
         </section>
 
         <section>
@@ -51,7 +52,7 @@
                       <input type="text" id="name" name="name" required>
                     </div>
                     <div>
-                      <label for="email">Your Email</label><br>
+                      <label for="email">Your Email</label>
                       <input type="email" id="email" name="email" required>
                     </div>
                     <div>
@@ -59,15 +60,8 @@
                       <input type="tel" id="contact" name="contact" required>
                     </div>
                     <div>
-                        <label for="size">Which piercing do you want?</label><br>
-                        <select id="size" name="size" required>
-                            <option value="">Select a piercing</option>
-                            <option value="oreja">Ear (Lobe, Helix, Tragus, Conch, Daith...) - 20 euros deposit. </option>
-                            <option value="cara">Face (Eyebrow, Bridge, Nose, Septum, Labret, Monroe...) - 30 euros deposit. </option>
-                            <option value="100">Body (Navel, Nipple, Surface, Dermal...) - 40 euros deposit. </option>
-                            <option value="?">I'm not sure</option>
-                        </select>
-
+                      <label for="tattoo-artist">Tattoo Artist</label>
+                      <input type="text" id="tattoo-artist" name="tattoo-artist">
                     </div>
                     <div>
                       <label for="date">Date</label><br>
@@ -78,10 +72,27 @@
                       <input type="time" id="hours" name="hours">
                     </div>
                     <div>
+                      <label for="description">What would you like to get tattooed?</label>
+                      <textarea id="description" name="description" rows="4"></textarea>
+                    </div>
+                    <div>
                       <label for="notes">Notes (Optional)</label>
                       <textarea id="notes" name="notes" rows="4"></textarea>
                     </div>
-
+                    <div>
+                        <label for="size">Tattoo size</label><br>
+                        <select id="size" name="size" required>
+                            <option value="">Select a size</option>
+                            <option value="20">20 cm - 20 euros deposit</option>
+                            <option value="50">50 cm - 50 euros deposit</option>
+                            <option value="100">100 cm - 100 euros deposit</option>
+                            <option value="?">I'm not sure</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="design">Put your design idea (Optional)</label>
+                        <input type="file" id="design" name="design">
+                    </div>
                     <button type="submit">Reserve</button>
                 </form>
             </article>
@@ -109,6 +120,7 @@
         
 
     </footer>
+
     <script src="../../js/cita.js"></script>
 </body>
 </html>
