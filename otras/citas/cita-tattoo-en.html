@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/citas.css">
+    <title>Request Tattoo Appointment</title>
+</head>
+<body>
+    <header class="navbar">
+        
+        <a href="../iniciado/iniciado-en.html"><img src="../../img/logo_Diva.png" alt="logo_DivaTattoo" class="logo"></a>
+
+        <nav class="menu">
+            <a href="../dark-mode/cita-tattoo-en-oscuro.html"><img src="../../iconos/luna.svg" alt="moon icon" class="icono_luna"></a>
+            <a href="../iniciado/iniciado-en.html">Home</a>
+            <a href="../sobre-nosotros/sobre-nosotros-en.html">About Us</a>
+
+            <a href="#" class="cita">Book your appointment</a>
+
+            <ul class="dropdown">
+                <li><a href="cita-tattoo-en.html">Tattoo Appointment</a></li>
+                <li><a href="cita-piercing-en.html">Piercing Appointment</a></li>
+            </ul>
+            
+            <a href="../perfil/perfil-en.html"><img src="../../img/stitch.jpg" alt="profile picture" class="perfil"></a>
+
+
+            <a class="pais">
+                
+                <img src="../../img/reino-unido.png" alt="United Kingdom flag" class="bandera">
+            </a>
+            <ul class="dropdown-paises">
+                <li><a href="cita-tattoo.html"><img src="../../img/banderaEsp.png" alt="Spain flag" class="bandera"></a></li> <!-- Change page language-->
+                <li><a href="cita-tattoo-de.html"><img src="../../img/aleman.png" alt="Germany flag" class="bandera"></a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="titulo">
+            <h1 class="h1_angel">Book your tattoo appointment</h1>
+        </section>
+
+        <section>
+            <article class="formulario">
+                <form>
+                    <div>
+                      <label for="name">Your name</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                      <label for="email">Your Email</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                      <label for="contact">Contact Number</label>
+                      <input type="tel" id="contact" name="contact" required>
+                    </div>
+                    <div>
+                      <label for="tattoo-artist">Tattoo Artist</label>
+                      <input type="text" id="tattoo-artist" name="tattoo-artist">
+                    </div>
+                    <div>
+                      <label for="date">Date</label><br>
+                      <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                      <label for="hours">Available Hours</label>
+                      <input type="time" id="hours" name="hours">
+                    </div>
+                    <div>
+                      <label for="description">What would you like to get tattooed?</label>
+                      <textarea id="description" name="description" rows="4"></textarea>
+                    </div>
+                    <div>
+                      <label for="notes">Notes (Optional)</label>
+                      <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <label for="notes">Price</label><br>
+                        <input type="text" id="precio" name="precio" required placeholder="varies by size">
+                    </div>
+                    <div>
+                        <label for="design">Put your design idea (Optional)</label>
+                        <input type="file" id="design" name="design">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+            
+        </section>
+    </main>
+   
+
+    <footer class="footer">
+        <article class="contacto">
+            <h3>Contact</h3>
+            <p>
+                C.palangre.1.local, 35510 Puerto Del Carmen, Tías, Spain <br>
+                660 59 31 54 <br>
+                ladivatattoo@gmail.com
+            </p>
+        </article>
+        
+        <article class="iconos">
+            <h3>Social Media</h3>
+            <a href="https://www.instagram.com/la_diva_tattoo/"><img src="../../iconos/logo-instagram.svg" alt="Instagram logo"></a>
+            <a href="https://www.facebook.com/profile.php?id=61553597955917"><img src="../../iconos/logo-facebook.svg" alt="Facebook logo"></a>
+            <a href="https://www.tiktok.com/@la.diva.tattoo?lang=es"><img src="../../iconos/logo-tiktok.svg" alt="TikTok logo"></a>
+        </article>
+        
+
+    </footer>
+
+    <script src="../../js/cita.js"></script>
+</body>
+</html>
