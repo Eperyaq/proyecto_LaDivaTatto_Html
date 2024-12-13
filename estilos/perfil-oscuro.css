@@ -160,7 +160,7 @@ GENERAL
 }
 
 .menu .dropdown li:hover {
-    background-color: #f0f0f0;
+    background-color: #b9b089;;
 }
     
 /** --------------------------------------------------------------------------------
@@ -280,6 +280,7 @@ input[type="date"] {
     outline: none;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
+    color: black;
 }
 
 /* Estilo para cuando el input está enfocado */

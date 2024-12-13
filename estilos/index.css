@@ -395,9 +395,7 @@ body{
     text-overflow: ellipsis;
     word-wrap: break-word;
     display: -webkit-box;
-    line-clamp: 9; /* Propiedad estándar para limitar el número de líneas */
-    -webkit-line-clamp: 9; 
-    -webkit-box-orient: vertical;
+
 }
 
 .review:hover {

@@ -238,9 +238,11 @@ button[type="submit"]:focus {
     justify-self: center;
 }
 
-.articulo p {
+.articulo p a {
     grid-column: 1 / -1; /* El texto "Ya tienes cuenta" ocupa ambas columnas */
     text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 /* Ajustes generales */
