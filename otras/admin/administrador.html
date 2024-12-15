@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/admin.css">
+    <title>Vista administrador</title>
+</head>
+<body>
+    <header class="navbar">
+        
+        <a href="../iniciado/iniciado.html"><img src="../../img/logo_Diva.png" alt="logo_DivaTattoo" class="logo"></a>
+
+        <nav class="menu">
+            <a href="../dark-mode/cita-piercing-oscuro.html"><img src="../../iconos/luna.svg" alt="icono luna" class="icono_luna"></a>
+            <a href="../iniciado/iniciado.html">Inicio</a>
+            <a href="../sobre-nosotros/sobre-nosotros.html">Sobre nosotros</a>
+
+            <a href="#" class="cita">Pide tu cita</a>
+
+            <ul class="dropdown">
+                <li><a href="../citas/cita-tattoo.html">Cita tatuajes</a></li>
+                <li><a href="../citas/cita-piercing.html">Cita piercings</a></li>
+            </ul>
+            
+            <a href="../perfil/perfil.html"><img src="../../img/stitch.jpg" alt="imagen foto perfil" class="perfil"></a>
+
+
+            <a class="pais">
+                <img src="../../img/banderaEsp.png" alt="bandera de españa" class="bandera">
+            </a>
+            <ul class="dropdown-paises">
+                <li><a href="cita-piercing-en.html"><img src="../../img/reino-unido.png" alt="bandera del reino-unido" class="bandera"></a></li> <!-- Cambiar idioma de la pagina-->
+                <li><a href="cita-piercing-de.html"><img src="../../img/aleman.png" alt="bandera de alemania" class="bandera"></a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="repartidor">
+            <article class="izq">
+                <h2>Cambiar precios de las citas de tatuaje</h2>
+                <form>
+                    <label for="small-tattoo-price">Precio para tatuaje 20cm:</label>
+                    <input type="number" id="small-tattoo-price" name="small-tattoo-price" value="50" min="0" step="0.01">
+    
+                    <label for="medium-tattoo-price">Precio para tatuaje 50cm:</label>
+                    <input type="number" id="medium-tattoo-price" name="medium-tattoo-price" value="100" min="0" step="0.01">
+    
+                    <label for="large-tattoo-price">Precio para tatuaje 100cm:</label>
+                    <input type="number" id="large-tattoo-price" name="large-tattoo-price" value="150" min="0" step="0.01">
+    
+                    <button type="submit">Guardar cambios</button>
+                </form>
+            </article>
+       
+
+        
+            <article class="der">
+                <h2>Cambiar precios de las citas de Piercings</h2>
+                <form>
+                    <label for="small-tattoo-price">Precio para piercing en la oreja:</label>
+                    <input type="number" id="small-tattoo-price" name="small-tattoo-price" value="50" min="0" step="0.01">
+    
+                    <label for="medium-tattoo-price">Precio para piercing en la cara:</label>
+                    <input type="number" id="medium-tattoo-price" name="medium-tattoo-price" value="100" min="0" step="0.01">
+    
+                    <label for="large-tattoo-price">Precio para piercing en el cuerpo:</label>
+                    <input type="number" id="large-tattoo-price" name="large-tattoo-price" value="150" min="0" step="0.01">
+    
+                    <button type="submit">Guardar cambios</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    
+    
+    <footer class="footer">
+        <article class="contacto">
+            <h3>Contacto</h3>
+            <p>
+                C.palangre.1.local,35510 Puerto Del Carmen, Tías, España <br>
+                660 59 31 54 <br>
+                ladivatattoo@gmail.com
+            </p>
+        </article>
+        
+        <article class="iconos">
+            <h3>Redes Sociales</h3>
+            <a href="https://www.instagram.com/la_diva_tattoo/"><img src="../../iconos/logo-instagram.svg" alt="Logo de instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=61553597955917"><img src="../../iconos/logo-facebook.svg" alt="Logo de instagram"></a>
+            <a href="https://www.tiktok.com/@la.diva.tattoo?lang=es"><img src="../../iconos/logo-tiktok.svg" alt="Logo de instagram"></a>
+        </article>
+        
+
+    </footer>
+<script src="../../js/cita.js"></script>
+</body>
+</html>
